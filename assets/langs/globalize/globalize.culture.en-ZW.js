@@ -1,0 +1,1 @@
+!function(e,t){var a;a="undefined"!=typeof require&&"undefined"!=typeof exports&&"undefined"!=typeof module?require("globalize"):e.Globalize,a.addCultureInfo("en-ZW","default",{name:"en-ZW",englishName:"English (Zimbabwe)",nativeName:"English (Zimbabwe)",numberFormat:{currency:{symbol:"Z$"}}})}(this);

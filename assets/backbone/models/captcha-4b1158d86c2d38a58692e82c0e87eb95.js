@@ -1,0 +1,1 @@
+var Captcha=null;!function(e){var t=null,o=null;check_localstorage("data_captcha")?t=new Backbone.LocalStorage("data_captcha"):o=new Backbone.LocalData("data_captcha"),Captcha=Backbone.Model.extend({urlRoot:"/services/captcha",localStorage:t,localData:o,defaults:{},initialize:function(){}})}(jQuery);

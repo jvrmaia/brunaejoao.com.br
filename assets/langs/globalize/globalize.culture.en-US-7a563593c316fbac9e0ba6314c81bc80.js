@@ -1,0 +1,1 @@
+!function(e,t){var a;a="undefined"!=typeof require&&"undefined"!=typeof exports&&"undefined"!=typeof module?require("globalize"):e.Globalize,a.addCultureInfo("en-US","default",{name:"en-US",englishName:"English (United States)"})}(this);

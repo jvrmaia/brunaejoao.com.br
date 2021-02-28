@@ -1,0 +1,1 @@
+var TemplateHome=null;!function(e){var t=null,o=null;check_localstorage("data_template_home")?t=new Backbone.LocalStorage("data_template_home"):o=new Backbone.LocalData("data_template_home"),TemplateHome=Backbone.Model.extend({urlRoot:"/services/template_home",idAttribute:"id_template_home",localStorage:t,localData:o,defaults:{},initialize:function(){}})}(jQuery);

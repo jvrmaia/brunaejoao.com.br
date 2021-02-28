@@ -1,0 +1,1 @@
+function pular(){var e=$("meta[name='root']").attr("content"),t=$("meta[name='lang']").attr("content");Backbone.history.navigate(e+"/"+t+"/home",!0)}

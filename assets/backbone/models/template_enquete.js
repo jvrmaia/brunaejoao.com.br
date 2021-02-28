@@ -1,0 +1,1 @@
+var TemplateEnquete=null;!function(e){var t=null,o=null;check_localstorage("data_template_enquete")?t=new Backbone.LocalStorage("data_template_enquete"):o=new Backbone.LocalData("data_template_enquete"),TemplateEnquete=Backbone.Model.extend({urlRoot:"/services/template_enquete",idAttribute:"id_enquete",localStorage:t,localData:o,defaults:{}})}(jQuery);

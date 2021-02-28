@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="player1/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="player2/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="player3/css/styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+<title>PlayerSkin03</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("ul.cores li").css("cursor","pointer").click(function(){
+		var player = $(this).data("player");
+		var skin = $(this).data("skin");
+		$("#music").removeClass("player1 player2 player3 skin1 skin2 skin3 skin4 skin5 skin6 skin7")
+		$("#music").addClass("player"+player+" skin"+skin);
+	});
+});
+</script>
+</head>
+
+<body>
+
+<ul class="cores" style="color:#000;">
+  <li data-player="1" data-skin="1">player 1 - rosa</li>
+  <li data-player="1" data-skin="2">player 1 - azul</li>
+  <li data-player="1" data-skin="3">player 1 - verde</li>
+  <li data-player="1" data-skin="4">player 1 - amarelo</li>
+  <li data-player="1" data-skin="5">player 1 - cinza</li>
+  <li data-player="1" data-skin="6">player 1 - laranja</li>
+  <li data-player="1" data-skin="7" style="margin-bottom:10px;">player 1 - vermelho</li>
+  <li data-player="2" data-skin="1">player 2 - laranja</li>
+  <li data-player="2" data-skin="2">player 2 - verde</li>
+</ul>
+
+
+<!-- INICIO DO PLAYER -->
+<div id="music" class="player3 skin1">
+    <div class="main">
+        <div class="info">
+            <p class="song"><span></span>Bad Romance</p>
+            <p class="artist"><span></span>Lady Gaga</p>
+        </div><!-- end .info -->
+        <div class="tracks">1/6</div>
+        <div class="control">
+            <div class="nav prev"></div>
+            <div class="play-pause"></div>
+            <div class="nav next"></div>
+        </div><!-- end .control -->
+        <div class="progress track">
+            <div class="bar">
+              <div class="drag"></div>
+            </div>
+        </div><!-- end .progress -->
+        <div class="volume-icon"></div>
+        <div class="volume track">
+            <div class="bar">
+              <div class="drag"></div>
+            </div>
+        </div><!-- end .valume -->
+        <div class="side">
+          <div class="on-off"></div>
+          <div class="note"></div>
+          <div class="eq"></div>
+        </div><!-- end .side -->
+        <div class="div-aux div-aux-1"></div>
+        <div class="div-aux div-aux-2"></div>
+        <div class="div-aux div-aux-3"></div><!-- divs auxiliares para elementos do skin -->
+    </div><!-- end .main -->
+</div><!-- end .player1 -->
+<!-- FIM DO PLAYER -->
+
+
+
+</body>
+</html>

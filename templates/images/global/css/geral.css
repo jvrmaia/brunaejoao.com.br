@@ -1,0 +1,82 @@
+/*fix google maps*/
+.map.map_canvas img{max-width:inherit!important;}
+
+h3.def-subtitle {margin-bottom:20px;}
+/*fix 37*/
+.template37-1 h3.def-subtitle, .template37-2 h3.def-subtitle, .template37-3 h3.def-subtitle {text-align:center;}
+
+/*protecao para não quebrar layouts mobile*/
+.def-text img, img, iframe{max-width:100%!important;}
+.def-text img, img{height:auto!important;}
+iframe, .def-text img, img{margin-left:auto; margin-right:auto;}
+iframe{margin-bottom:20px; display:block;}
+
+/*fix boxy*/
+table.boxy-wrapper {position:absolute; left:50%!important; margin-left:-151px!important; top:50%!important; margin-top:-142px!important;}
+
+/* mobile */
+@media screen and (max-width:640px) {
+	.def-text img {
+	    max-width: 100%!important;
+	    height: auto!important;
+	}
+	.boxy-wrapper{
+    	position:fixed;
+	}
+
+	/* Responsive Table */ 
+	.def-text table caption{ 
+	    text-align: center; 
+	    width: 100%; 
+	    display: block; 
+	    min-height: 40px; 
+	    vertical-align: middle; 
+	    padding-top: 20px; 
+	} 
+	.def-text table { 
+		display: block!important; 
+		position: relative!important; 
+		width: 100%!important; 
+	} 
+	.def-text table thead, 
+	.def-text table tbody, 
+	.def-text table th, 
+	.def-text table td, 
+	.def-text table tr { 
+		display: block!important; 
+	}
+	.def-text table td, .def-text table th { 
+		height: 35px; 
+	} 
+	.def-text table thead { 
+    	float:left!important; 
+	} 
+	.def-text table tbody { 
+		width: auto!important; 
+		position: relative!important; 
+		overflow-x: auto!important; 
+		-webkit-overflow-scrolling: touch!important; 
+		white-space: nowrap!important; 
+	} 
+	.def-text table tbody tr { 
+		display: inline-block!important; 
+	} 
+	.def-text table{max-width:100%!important; width:100%!important;} 
+	.def-text table td span{font-size:12px!important;} 
+	.def-text table td a{word-wrap: break-word!important;}
+	.def-rsvp .rsvp-line .radio-text {
+	    font-size:14px!important;
+	    padding-top:2px!important;
+	}
+	.dados-radio-rihgt label:last-child {
+	    padding-right:0px!important;
+	}
+	.def-rsvp .rsvp-line .dados-radio-rihgt {
+	    left: 158px!important;
+	}
+}
+/*mobile*/
+@media only screen and (max-width:480px) {
+	#layerslider.ls-container, #peKenBurns{display:block!important;}
+	#peKenBurns{zoom:48%;}
+}

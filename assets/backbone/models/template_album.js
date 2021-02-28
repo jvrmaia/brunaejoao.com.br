@@ -1,0 +1,1 @@
+var TemplateAlbum=null;!function(e){var t=null,o=null;check_localstorage("data_template_album")?t=new Backbone.LocalStorage("data_template_album"):o=new Backbone.LocalData("data_template_album"),TemplateAlbum=Backbone.Model.extend({urlRoot:"/services/template_album",idAttribute:"id_template_album",localStorage:t,localData:o,defaults:{},initialize:function(){}})}(jQuery);
