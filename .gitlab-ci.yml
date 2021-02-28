@@ -1,11 +1,10 @@
-image: alpine:latest
+image: registry.gitlab.com/pages/hugo:latest
 
 pages:
-  stage: deploy
   script:
-    - echo 'Nothing to do...'
+  - echo 'oi'
   artifacts:
     paths:
-      - site
+    - public
   only:
-    - main
+  - main
